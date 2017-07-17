@@ -1,0 +1,74 @@
+html {
+  font-size: 16px; }
+
+h1 {
+  font-size: 99px;
+  display: fix;
+  margin: 0 2rem 2rem; }
+
+h2 {
+  font-size: 55px;
+  margin: 0 3rem 3rem; }
+
+p {
+  color: blue; }
+
+body {
+  background-color: white;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.circle {
+  height: 25rem;
+  width: 25rem;
+  /*vmin = 1 vh or vw whichever is smaller */
+  background: #ffe100;
+  border-radius: 50%;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*
+              background-color 2s ease,
+              border-radius 2s ease-out;
+*/ }
+
+.activated {
+  background: magenta;
+  border-radius: 0;
+  -webkit-transform: scale(0.6) rotate(360deg);
+          transform: scale(0.6) rotate(360deg);
+  /*transition and transform are working hand-in-hand */ }
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  button.hover {
+    color: magenta; }
+  button.focus {
+    color: black; }
+  button.active {
+    color: #db1d2d; }
+
+/*# sourceMappingURL=sea-lon-wea.css.map */
